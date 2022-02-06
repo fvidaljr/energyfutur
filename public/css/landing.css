@@ -1,0 +1,554 @@
+*,
+::after,
+::before {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+:root {
+    --blue-intro: hsl(217, 28%, 15%);
+    --blue-main: hsl(218, 28%, 13%);
+    --blue-footer: hsl(216, 53%, 9%);
+    --blue-testimonials: hsl(219, 30%, 18%);
+    --white: hsl(0, 0%, 100%);
+    --cyan-gradient: hsl(176, 68%, 64%);
+    --blue-gradient: hsl(198, 60%, 50%);
+    --light-red: hsl(0, 100%, 63%);
+    --gradient: linear-gradient(to right, var(--cyan-gradient), var(--blue-gradient));
+    --padding-container: 60px 0;
+}
+
+body{
+    background-color: var(--blue-main);
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    font-size: 1.2rem;
+}
+p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+h1{
+    font-size: 2rem;
+
+}
+h3{
+    font-size: 1.8rem;
+}
+
+nav{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 24px;
+    background-color: hsla(217, 27%, 13%);
+    border-bottom: 1px solid var(--cyan-gradient);
+}
+.nav-left{
+    display: flex;
+}
+.nav-center{
+    display: none;
+}
+.nav-right ul,
+.nav-center ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.nav-right ul li a,
+.nav-center ul li a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    color: var(--cyan-gradient);
+    
+}
+.nav-right ul li a:hover,
+.nav-center ul li a:hover{
+    text-decoration: none;
+    color: var(--cyan-gradient);
+    background-color: #f5f7f842;
+    cursor: pointer;
+    /* box-shadow: 0 1px 1px #339ecc; */
+    /* border: 1px var(--cyan-gradient); */
+}
+
+.nav-left ul{
+    margin-left: 12px;
+}
+.nav-left ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 90px;
+    /* padding-left: 20px; */
+    
+}
+.menu{
+    display: none;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 8px;
+    border-radius: 8px;
+    color: var(--cyan-gradient);
+}
+
+/* .nav-center{
+    display: block;
+}
+.nav-right{
+    display: block;
+} */
+
+/* .nav-center ul,
+.nav-right ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--cyan-gradient);
+    top: 60px;
+    left: 100%;
+    text-align: center;
+    transition: all 0.5s;
+}
+.nav-center ul li,
+.nav-right ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+.nav-center ul li a,
+.nav-right ul li a{
+    font-size: 3rem;
+}
+.nav-center ul li a:hover,
+.nav-right ul li a:hover,
+.nav-center ul li a.active,
+.nav-right ul li a.active{
+    background: none;
+    color: red;
+} */
+
+.menu a:hover{
+    text-decoration: none;
+    color: var(--blue-main);
+    background-color: #339ecc42;
+    border: 1px var(--cyan-gradient);
+    /* cursor: pointer; */
+}
+
+.hero__wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background-color: var(--blue-main);
+}
+
+.hero__wave::before{
+    content: "";
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/energyfutur-ec.appspot.com/o/Landing%20page%20on%20grid%2Fbg-curvy-mobile.svg?alt=media&token=ad3eceb7-2198-445e-adae-c9a6a10d592f");
+    background-size: 100% 100px;
+}
+header{
+    height: 100vh;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow: hidden;
+
+}
+.hero__main{
+    color: #fff;
+    display: grid;
+    gap: 20px;
+    text-align: center;
+    position: relative;
+}
+.hero__img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 40px 0;
+    max-width: 600px;
+}
+
+.hero__title{
+    margin-top: 25px;
+}
+
+.hero__paragraph{
+    line-height: 20px;
+    /* margin: .5em 0; */
+}
+
+.hero__cta{
+    width: 200px;
+    padding: 15px 0;
+    border-radius: 2em;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    place-self: center;
+    text-decoration: none;
+}
+.hero__cta:hover{
+    text-decoration: none;
+    color: var(--blue-main);
+    background-color: #ffffff9d;
+}
+.about{
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+
+.productive__title{
+    margin: 20px 0;
+    color: var(--white);
+    text-align: center;
+}
+
+.project{
+    height: 700px;
+}
+.slider-container{
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 80%;
+    height: 600px;
+    overflow: hidden;
+    cursor: grab;
+}
+.slider{
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    width: auto;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    column-gap: 2rem;
+    pointer-events: none;
+}
+.slider-item{
+    width: 300px;
+    height: 100%;
+}
+.slider-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+}
+
+
+
+
+.about__img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.about__title{
+    margin-top: 1.4em;
+    margin-bottom: 1em;
+}
+
+.productive{
+    color: #fff;
+    display: grid;
+    gap: 3em;
+}
+
+.productive__img{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+
+.productive__paragraph{
+    line-height: 1.7;
+    margin-bottom: 1em;
+}
+
+
+.productive__cta{
+    display: inline-block;
+    color: var(--cyan-gradient);
+    line-height: 2.5;
+    text-decoration: none;
+    border-bottom: 1px solid var(--cyan-gradient);
+}
+
+.productive__arrow{
+    margin-left: .3em;
+    vertical-align: middle;
+}
+
+.card{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+
+.card__item{
+    background-color: var(--blue-testimonials);
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.5em 1em;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px -5px rgb(255, 255, 255, .5);
+}
+
+.card__item--first{
+    position: relative;
+}
+
+.card__item--first::before{
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 30px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+.card__profile{
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.card__picture{
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.card__img{
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.join{
+    /* background-image: linear-gradient(var(--blue-main) 50%, var(--blue-footer) 50%); */
+    color: #fff;
+    padding: 25px 0;
+}
+
+.join__container{
+    background-color: var(--blue-testimonials);
+    border-radius:8px ;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    text-align: center;
+}
+
+.join__title{
+    margin-bottom: 1em;
+}
+
+.join__paragraph{
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+}
+
+.join__form{
+    display: grid;
+    gap: 1em;
+}
+
+.join__input{
+    padding: 15px 20px;
+    font: inherit;
+    border-radius: 30px;
+
+    outline: none;
+    border: none;
+}
+
+.join__input--submit{
+    background-image: var(--gradient);
+    color: #Fff;
+    font-family: var(--heading-font);
+    font-weight: bold;
+}
+footer{
+    width: 100%;
+    display: flex;
+    background-color: hsla(215, 52%, 9%, 0.137);
+    color: #fff;
+    justify-content: center;
+}
+footer ul li a,
+footer ul li a,
+footer ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 2rem;
+    padding: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    color: var(--cyan-gradient);
+}
+footer ul,
+footer ul,
+footer ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+footer ul li a:hover,
+footer ul li a:hover,
+footer ul li a:hover{
+    text-decoration: none;
+    color: var(--blue-main);
+    background-color: hsla(176, 68%, 64%, 0.199);
+    /* border: 1px var(--cyan-gradient); */
+}
+
+@media (min-width:790px){
+    .menu{
+        display: none;
+    }
+    .nav-right{
+        display: block;
+    }
+    .nav-center{
+        display: block;
+    }
+    .nav-right ul,
+    .nav-center ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+    .nav-right ul li a,
+    .nav-center ul li a{
+        text-decoration: none;
+        font-size: 1.4rem;
+        font-weight: bold;
+        padding: 8px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 8px;
+        color: var(--cyan-gradient);
+        
+    }
+    .nav-right ul li a:hover,
+    .nav-center ul li a:hover{
+        text-decoration: none;
+        color: var(--cyan-gradient);
+        background-color: #f5f7f842;
+        cursor: pointer;
+        /* box-shadow: 0 1px 1px #339ecc; */
+        /* border: 1px var(--cyan-gradient); */
+    }
+
+
+    .hero__title{
+        font-size: 2.6rem;
+    }
+
+    .hero__wave::before{       
+        background-image: url("https://firebasestorage.googleapis.com/v0/b/energyfutur-ec.appspot.com/o/Landing%20page%20on%20grid%2Fbg-curvy-desktop.svg?alt=media&token=418aa14f-e55d-4433-b963-2525f53709a2");
+    }
+
+    .about{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .about__item{
+        width: 40%;
+    }
+
+    .productive{
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .productive__title{
+        font-size: 2rem;
+        margin-bottom: .6em;
+    }
+
+    .card{
+        flex-direction: row;
+    }
+
+    .join__container{
+        width: 70%;
+    }
+
+    .join__title{
+       font-size: 2rem;
+        margin-bottom: .7em;
+    }
+
+    .join__form{
+        grid-template-columns: 1fr max-content;
+    }
+    footer ul{
+        flex-direction: row;
+    }
+
+}
