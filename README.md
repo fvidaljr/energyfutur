@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Frontend Mentor - Fylo dark theme landing page
 
 ![Design preview for the Fylo dark theme landing page challenge](./design/desktop-preview.jpg)
@@ -90,3 +91,6 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+=======
+# energyfutur
+>>>>>>> a06c8bcd3de206119d4079373d8fa9dfa344636c
