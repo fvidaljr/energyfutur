@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Jockey+One&family=Lakki+Reddy&family=Leckerli+One&family=Manrope:wght@600&family=Monda:wght@400;700&family=Montserrat:wght@100&family=Poppins:ital,wght@0,100;0,200;0,400;1,100&family=Righteous&display=swap');
+body{
+  font-family: 'Montserrat', sans-serif;
+    background: #fff;
+    font-weight: 1000;
+  }
+    
+p{font-family: 'Montserrat', sans-serif;
+ font-size: 1.1em;
+   font-weight: 500;
+   line-height: 2em;
+   color: #999;
+}
